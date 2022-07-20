@@ -73,19 +73,36 @@ img {
   line-height: calc(31 / 26);
   color: #000000;
 }
-
 .accent {
   color: var(--accent-tx-cl);
 }
-.header-link {
+.header-nav .link.current {
+  color: var(--accent-tx-cl);
+}
+.studia-link::after {
   display: block;
+  
+  content: "";
+  width: 48px;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+
+}
+.header-link {
+  align-items: flex-end;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-}
+  }
+  .header-item {
+    display: flex;
+    flex-direction: column;
+  }
 
 .header-mail {
   display: flex;
@@ -527,9 +544,7 @@ img {
   color: var(--accent-tx-cl);
 }
 
-.header-nav .link.current {
-  color: var(--accent-tx-cl);
-}
+
 
 .btn:hover,
 .btn:focus {
