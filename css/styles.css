@@ -79,19 +79,22 @@ img {
 .header-nav .link.current {
   color: var(--accent-tx-cl);
 }
+.header-item {
+  position: relative;
+}
 .studia-link::after {
   display: block;
-  
   content: "";
   width: 48px;
   height: 4px;
   background: #2196F3;
   border-radius: 2px;
-
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 .header-link {
-  align-items: flex-end;
-  display: flex;
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -99,16 +102,10 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
   }
-  .header-item {
-    display: flex;
-    flex-direction: column;
-  }
-
-.header-mail {
+  .header-mail {
   display: flex;
   align-items: baseline;
 }
-
 .header-icon {
   margin-right: 10px;
   fill: #757575;
@@ -137,6 +134,19 @@ img {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+}
+.portfolio-link::after {
+  display: block;
+    content: "";
+    width: 78px;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+
 }
 
 /*hero section*/
