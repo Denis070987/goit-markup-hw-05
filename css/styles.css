@@ -296,6 +296,34 @@ img {
   display: flex;
   gap: 30px;
 }
+ .doing-item {
+  position: relative;
+  height: 294px;
+ }
+.title-container {
+  position: absolute;
+  width: 100%;
+  height: 294px;
+  background-color: #2F303A 80 %;
+  z-index: 10;
+}
+.item-title {
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #8d2828;
+
+
+  background-color: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+
 
 /*team section*/
 .team {
