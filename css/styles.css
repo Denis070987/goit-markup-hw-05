@@ -84,10 +84,10 @@ img {
 }
 .studia-link::after {
   display: block;
-  content: "";
+  content: '';
   width: 48px;
   height: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 2px;
   position: absolute;
   bottom: 0px;
@@ -101,8 +101,8 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  }
-  .header-mail {
+}
+.header-mail {
   display: flex;
   align-items: baseline;
 }
@@ -137,16 +137,14 @@ img {
 }
 .portfolio-link::after {
   display: block;
-    content: "";
-    width: 78px;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-
-
+  content: '';
+  width: 78px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 /*hero section*/
@@ -296,9 +294,9 @@ img {
   display: flex;
   gap: 30px;
 }
- .doing-item {
+.doing-item {
   position: relative;
-  }
+}
 .item-title {
   position: absolute;
   font-weight: 700;
@@ -307,15 +305,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
   padding-top: 27px;
   padding-bottom: 27px;
   bottom: 0px;
 }
-
-
 
 /*team section*/
 .team {
@@ -574,14 +570,10 @@ img {
   color: var(--accent-tx-cl);
 }
 
-
-
 .btn:hover,
 .btn:focus {
   color: var(--accent-tx-cl);
 }
-
-
 
 /* modal window */
 .backdrop {
@@ -597,15 +589,18 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .backdrop.is-hidden {
-opacity: 0;
-visibility: hidden;
-pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal {
-  position: relative;
+  position: absolute;
   width: 528px;
   height: 581px;
-  background-color: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
   border-radius: 4px;
 }
 .modal-btn {
@@ -619,7 +614,7 @@ pointer-events: none;
   right: 8px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 0px;
   cursor: pointer;
 }
